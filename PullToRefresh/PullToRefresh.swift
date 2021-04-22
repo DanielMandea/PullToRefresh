@@ -263,10 +263,7 @@ extension PullToRefresh {
     
     func endRefreshing() {
         guard isEnabled else { return }
-        
-        if state == .loading {
-            state = .finished
-        }
+        state = .finished
     }
 }
 
